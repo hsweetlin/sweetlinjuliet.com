@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#page{
+    width:30vw;
+    height:60vh;
+    text-align: center;
+    display: inline-block;
+    margin-top: 50px;
+    padding:0;
+    margin-left: 2%;
+
+    
+}
+.timezone-heading{
+    font-size: 20px;
+    text-align: center;
+    /* margin-top: 50px; */
+}
+
+
+#round{
+    margin-top:3rem;
+    text-align: center;
+    width:250px;
+    height:250px;
+   margin-left:20%;
+   border-radius: 50%;
+   border:10px solid black;
+   position:relative;
+   
+}
+
+#round #circle {
+    width:20px;
+    height:20px;
+    background-color: black;
+    margin-left: 47.5%; 
+    position: relative;
+    top:46.5%; 
+    z-index: 1;
+    border-radius: 100%;
+   
+}
+
+#hoursHand {
+    width:6px;
+    height:80px;
+    position:relative;
+    top:17px;
+    background-color:green;
+    margin-left:50%;
+    transform-origin: bottom center;
+    }
+
+    #round #minutesHand {
+        width:3.5px;
+        height:98px;
+        position:relative;
+        top:-81px;
+        background-color:red;
+        margin-left:51%;
+        transform-origin: bottom center;
+        }
+
+
+#seconds {
+width:2px;
+height:105px;
+position:relative;
+top:-186px;
+background-color: black;
+margin-left:51.3%;
+transform-origin: bottom center;
+ 
+} 
+
+       #round .time {
+        --rotation:0;
+        position:absolute;
+        top:0px;
+    text-align: center;
+        width:100%;
+        height:100%;
+        transform: rotate(var(--rotation));
+       }
+
+       #round .line1{transform: translate(23%, 9%)}
+       #round .line2{transform:translate(40%, 24%)}
+       #round .line3{transform:translate(43%, 44%)}
+       #round .line4{transform:translate(37%, 68%)}
+       #round .line5{transform:translate(22%, 83%)}
+       #round .line6{transform:translate(1%, 82%)}
+       #round .line7{transform:translate(-21%, 83%)}
+       #round .line8{transform:translate(-37%, 68%)}
+       #round .line9{transform:translate(-43%, 44%)}
+       #round .line10{transform:translate(-40%, 24%)}
+       #round .line11{transform:translate(-23%, 9%)}
+       #round .line12{transform:translateX(0)}
+       /* #round .line1{--rotation:30deg}
+       #round .line2{--rotation:60deg}
+       #round .line3{--rotation:90deg}
+       #round .line4{--rotation:120deg}
+       #round .line5{--rotation:150deg} */
+       /* #round .line6{--rotation:180deg} */
+       /* #round .line7{--rotation:210deg} */
+       /* #round .line8{--rotation:240deg}
+       #round .line9{--rotation:270deg}
+       #round .line10{--rotation:300deg}
+       #round .line11{--rotation:330deg}
+       #round .line12{--rotation:360deg} */
+
+        #clock6 {
+           transform: translate(50px 50px);
+            color:green;
+            font-size: 30px;   
+        }
+
+        #clock3 {
+            transform: translate(50px 50px);
+             color:red;
+             font-size: 25px;
+             
+         }
+
+         #clock9 {
+            transform: translate(50px 50px);
+             color:red;
+             font-size: 25px;
+             
+         }
+
+         #clock12 {
+            transform: translate(50px 50px);
+             color:green;
+             font-size: 30px;
+             
+         }
