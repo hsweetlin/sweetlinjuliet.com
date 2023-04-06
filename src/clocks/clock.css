@@ -3,30 +3,66 @@
     padding: 0;
     box-sizing: border-box;
 }
-#page{
-    width:30vw;
-    height:60vh;
+.page{
+    width:350px;
+    height:350px;
     text-align: center;
     display: inline-block;
     margin-top: 50px;
-    padding:0;
-    margin-left: 2%;
-
-    
+    margin-left: 5%;
 }
+
+.page:hover{
+    background-color: beige;
+}
+
+.icon{
+    visibility: hidden;
+    font-size: 25px;
+    position: relative;
+    top: 8px;
+    left:150px;  
+}
+.icon:active .page {
+display:none;
+}
+.page:hover .icon{
+    cursor: pointer;
+    visibility: visible; 
+    color: red;
+}
+ .icon-background{ 
+    margin-top: 6rem;
+    width:360px;
+    height:400px;
+    display: inline-block;
+    margin-left: 4%;
+    /* border: 1px solid black;  */
+    /* background-color: beige;  */
+  } 
+/* .icon-background:hover .icon{
+    visibility: visible;
+    color: red;
+    cursor: pointer;
+    display:inline-block;
+} */
+/* .icon:focus { */
+    /* visibility: hidden; */
+    /* color:blue; */
+/* } */
+
 .timezone-heading{
     font-size: 20px;
     text-align: center;
     /* margin-top: 50px; */
 }
 
-
 #round{
-    margin-top:3rem;
-    text-align: center;
+    margin-top:2rem;
+    /* text-align: center; */
     width:250px;
     height:250px;
-   margin-left:20%;
+   margin-left:15%;
    border-radius: 50%;
    border:10px solid black;
    position:relative;
