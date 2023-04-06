@@ -4,11 +4,11 @@ import { ClockTime } from "./clocks/clock";
 import './App.css';
 
 function App() {
-  const [timezone, setTimezone] = useState(["IST"]);
+  const [timezone, setTimezone] = useState(["Asia/Kolkata"]);
   const [selected, setSelected] = useState();
   
   const handleClick = () => {
-    let timeValue = [...timezone]
+    let timeValue = [...timezone];
     timeValue.push(selected);
     setTimezone(timeValue);
   };
@@ -16,19 +16,22 @@ function App() {
   const onChange =(value) => {
     setSelected(value);
   }
-
+  
   return (
     <div className="container">
     <h1 className="heading">CLOCK</h1>
     <div className="button-list">
       <ClockDropDown className="dropdown" onChange={onChange} />
-      <button className="clickButton" onClick={handleClick}>+Add</button>
+      {selected? (<button className="clickButton" onClick={handleClick}>+Add</button>) : 
+      (<button className="clickButton">+Add</button>)}
       </div>
-      {timezone.map((item)=>
-      <ClockTime timezone={item} /> )}
-      
+      <div>
+      { timezone.map((item, index)=>
+      <ClockTime className="clock-box" timezoneName={item} index={index} timezone={timezone} setTimezone={setTimezone} /> )}
+      </div>
     </div>
   );
 }
+
 
 export default App;
