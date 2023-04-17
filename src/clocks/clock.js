@@ -36,10 +36,8 @@ export function ClockTime({ timezoneName, timezone, setTimezone, index}) {
     
     <div className="icon-background">
     <div className="page">
-     
         <FaTimesCircle className="icon" color="red" onClick={deleteButton}/>
         <h1 className="timezone-heading">{timezoneName}</h1>
-        {/* {console.log(active)} */}
         <div id="round">
           <div id="circle"></div>
           <div
