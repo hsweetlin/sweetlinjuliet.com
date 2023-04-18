@@ -6,7 +6,7 @@ export function ClockTime({ timezoneName, timezone, setTimezone, index}) {
   const [seconds, setSeconds] = useState();
   const [minutes, setMinutes] = useState();
   const [hours, setHours] = useState();
-  // const [icon, setIcon] = useState([]);
+ 
   // const [active, setActive] = useState();
   useEffect(() => {
     const interval = setInterval(setClock, 100);

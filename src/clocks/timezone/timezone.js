@@ -336,7 +336,6 @@ export const timeZone = [
   "Europe/Zaporozhye",
   "Europe/Zurich",
   "HST",
-  "IST",
   "Indian/Chagos",
   "Indian/Christmas",
   "Indian/Cocos",
