@@ -106,6 +106,7 @@ export const timeZone = [
   "America/Moncton",
   "America/Monterrey",
   "America/Montevideo",
+  "America/Montreal",
   "America/Nassau",
   "America/New_York",
   "America/Nipigon",
